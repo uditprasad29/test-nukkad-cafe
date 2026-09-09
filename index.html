@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nukkad Cafe | Apna Thikana in Giridih</title>
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#D4AF37">
+    <link rel="apple-touch-icon" href="logo.jpg">
+
+    <meta property="og:title" content="The Nukkad Cafe | Apna Thikana in Giridih">
+    <meta property="og:description" content="Giridih's premium cafe experience. Order our signature Momos, Biryani, and Chai online directly via WhatsApp!">
+    <meta property="og:image" content="logo.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="The Nukkad Cafe">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+    <div class="ambient-bg"></div>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="brand-logo">
+                    <img src="logo.jpg" alt="The Nukkad Cafe Logo" class="logo-img">
+                    <span class="brand-text">The Nukkad Cafe</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active-link">Home</a></li>
+                    <li><a href="menu.html">Order Online</a></li>
+                    <li><a href="experience.html">Our Story</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="#" class="btn btn-gold" onclick="toggleCart(event)" style="color: #050505; padding: 10px 24px;"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">0</span></a></li>
+                </ul>
+                <div class="mobile-menu-btn" id="menuBtn"><i class="fas fa-bars"></i></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content reveal">
+                    <h1>Giridih's Premium Vibe, Right at Your <span class="text-gold">Nukkad</span></h1>
+                    <p>Welcome to <em>Apna Thikana</em>. Located in the heart of Sirsia, The Nukkad Cafe brings together our local desi warmth with a trendy, premium dining experience. From that perfect cup of Chai to chef-crafted Momos and Sizzlers—come for the taste, stay for the memories.</p>
+                    <div class="hero-btns">
+                        <a href="menu.html" class="btn btn-gold">Explore Menu & Order</a>
+                        <a href="experience.html" class="btn btn-outline">Discover Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="social-proof reveal">
+            <div class="container proof-container">
+                <div class="proof-item"><h4>10k+</h4><p>Happy Foodies</p></div>
+                <div class="proof-item"><h4>4.9/5</h4><p>Average Rating</p></div>
+                <div class="proof-item"><h4>#1</h4><p>Hangout Spot in Giridih</p></div>
+                <div class="proof-item"><h4>30 Min</h4><p>Fast Delivery</p></div>
+            </div>
+        </div>
+
+        <section class="gallery-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="text-gold">The Nukkad Vibe</h2>
+                    <p>Good food. Better conversations. Experience the premium yet chatpata essence of Giridih's favorite corner.</p>
+                </div>
+                
+                <div class="masonry-gallery reveal delay-1">
+                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-mug-hot"></i><span>Kulhad Chai</span></div></div>
+                    <div class="gallery-item tall"><div class="gallery-placeholder"><i class="fas fa-drumstick-bite"></i><span>Dehati Chicken</span></div></div>
+                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-leaf"></i><span>Steamed Momos</span></div></div>
+                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-glass-martini-alt"></i><span>Hazelnut Frappe</span></div></div>
+                    <div class="gallery-item wide"><div class="gallery-placeholder"><i class="fas fa-users"></i><span>Apna Thikana</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box glass-panel reveal">
+                    <h2 class="text-gold">Craving Something Chatpata?</h2>
+                    <p>Bhookh lagi hai? Skip the wait. Order your favorite Nukkad specials online and get Giridih's ultimate comfort food delivered straight to your door.</p>
+                    <a href="menu.html" class="btn btn-gold" style="font-size: 1.2rem; padding: 18px 40px;">Order Online Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid reveal">
+                <div class="footer-brand">
+                    <img src="logo.jpg" alt="The Nukkad Cafe" class="footer-logo-img">
+                    <p>Giridih ka Apna Thikana—elevating the local cafe culture with premium brews, killer food, and the perfect chill spot.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="experience.html">About Us</a></li>
+                        <li><a href="menu.html">Order Online</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Visit Us</h4>
+                    <ul class="footer-links">
+                        <li class="address-li">
+                            <i class="fas fa-map-marker-alt text-gold"></i>
+                            <span>Block Road, Kalika Kunj Colony,<br>Sirsia, Giridih, Jharkhand</span>
+                        </li>
+                        <li class="address-li" style="margin-top: 15px;">
+                            <i class="fas fa-phone-alt text-gold"></i>
+                            <span>+91 96610 23090</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 The Nukkad Cafe. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <!-- Universal Shopping Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart(event)"></div>
+    <div class="cart-sidebar glass-panel" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Order</h2>
+            <i class="fas fa-times close-cart" onclick="toggleCart(event)"></i>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart-msg">Your cart is empty</p>
+        </div>
+        <div class="cart-form-container" id="cartFormContainer" style="display: none;">
+            <div class="cart-form-trigger" id="cartFormTrigger" onclick="toggleAddressForm()">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Add delivery details to continue</span>
+                <i class="fas fa-chevron-down" id="cartFormChevron"></i>
+            </div>
+            <div class="cart-form-content" id="cartFormContent">
+                <p class="address-warning">
+                    <i class="fas fa-info-circle"></i> Please re-check your address and phone number as it will be used for delivery.
+                </p>
+                <div class="form-group"><input type="text" id="custName" placeholder="Your Name" required></div>
+                <div class="form-group"><input type="tel" id="custPhone" placeholder="Phone Number" required></div>
+                <div class="form-group"><textarea id="custAddress" placeholder="Complete Delivery Address" rows="2" required></textarea></div>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="text-gold" id="cartTotal">₹0</span>
+            </div>
+            <button class="btn btn-gold checkout-btn" onclick="checkoutWhatsApp()">
+                <i class="fab fa-whatsapp" style="font-size: 1.2rem; margin-right: 8px;"></i> Place Order
+            </button>
+        </div>
+    </div>
+
+    <!-- Universal Chatbot-Style Floating Cart Button -->
+    <div class="floating-cart-btn" onclick="toggleCart(event)">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="floating-cart-count" id="floating-cart-count">0</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
